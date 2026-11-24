@@ -1,0 +1,22 @@
+### 2. `.gitignore`
+This prevents Jupyter checkpoint folders, Python cache files, and Conda/virtual environment clutter from being uploaded when you run `git add .` in Git Bash. *(Note: Make sure the filename starts with a dot: `.gitignore`)*
+
+```text
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
